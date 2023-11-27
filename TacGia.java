@@ -24,21 +24,12 @@ public class TacGia {
      
     }
 
-    public TacGia(String tacGiaInfo) {
-    String[] info = tacGiaInfo.split(",");
-    this.tenTG = info[0];
-    this.queQuan = info[1];
-}
 
     public String getTenTG() {
         return tenTG;
     }
 
     public void setTenTG(String tenTG) {
-         while(tenTG.length() < 2 || tenTG.length() > 50 || !tenTG.matches("[a-zA-Z ]+") || !Character.isUpperCase(tenTG.charAt(0)) ) {
-                System.out.println("Nhap lai Ten tac Gia");
-                tenTG=sc.nextLine();
-        }
         this.tenTG = tenTG;
     }
 
@@ -47,10 +38,6 @@ public class TacGia {
     }
 
     public void setQueQuan(String queQuan) {
-         while(queQuan.length() < 2 || !queQuan.matches("[a-zA-Z ]+") || !Character.isUpperCase(queQuan.charAt(0)) ) {
-                System.out.println("Nhap lai Que Quan");
-                queQuan=sc.nextLine();
-        }
         this.queQuan = queQuan;
     }
     public void input1(){
@@ -66,6 +53,8 @@ public class TacGia {
 public String toString() {
     return tenTG + "," + queQuan ; // thay đổi này tùy thuộc vào các thuộc tính của bạn
 }
+
+   
 
     
 }

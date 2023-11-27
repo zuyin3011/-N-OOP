@@ -32,7 +32,12 @@ public class Truyen extends Sach{
 
     public Truyen() { 
     }
-
+    
+    public Truyen(String tenSP, String NSX, long giaBan, long giaNhap, String maSach, TacGia tacGia, int namXB, String loaiSach, String ngonNgu, String loaiTruyen) {
+        super(tenSP, NSX, giaBan, giaNhap, maSach, tacGia, namXB, loaiSach);
+        this.ngonNgu = ngonNgu;
+        this.loaiTruyen = loaiTruyen;
+    }
     
 
 

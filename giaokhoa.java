@@ -20,11 +20,12 @@ public class giaokhoa extends Sach {
 //    public giaokhoa(String tenSP,String NSX, double giaBan, double giaNhap, String maSach, TacGia tacGia, int namXB,String loaiSach) {
 //        super(tacGia, namXB, maSach, NSX, giaBan, giaNhap, tenSP, loaiSach);
 //    }
-    public giaokhoa(String tenSP,String NSX, double giaBan, double giaNhap, String maSach, TacGia tacGia, int namXB,String loaiSach,int lop, String mon) {
-        super(tacGia, namXB, maSach, NSX, giaBan, giaNhap, tenSP, loaiSach);
+    public giaokhoa(String tenSP,String NSX, long giaBan, long giaNhap, String maSach, TacGia tacGia, int namXB,String loaiSach,int lop, String mon) {
+        super(tenSP,NSX,giaBan,giaNhap,maSach,tacGia,namXB,loaiSach);
         this.lop = lop;
         this.mon = mon;
     }
+    
 
   
 
@@ -39,7 +40,8 @@ public class giaokhoa extends Sach {
     }
 
   
-  
+
+
 
     
 

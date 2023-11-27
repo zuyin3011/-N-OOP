@@ -5,6 +5,7 @@ public interface CHUCNANG {
 	default void Xoa() {};
 	default void Sua() {};
 	default void timKiem() {};
-	default void hienThiDanhSach() {};
+                    default void hienThiDanhSach() {};
+//	default void printFileContents(String filename){};
 }
 
