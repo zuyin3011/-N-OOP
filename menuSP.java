@@ -19,24 +19,8 @@ public class menuSP {
     
 
    public menuSP() {
-        dsSach = new DS_Sach() {
-        
-//            dsDCHT  = new DSDungCuHocTap(){
-//               @Override
-//            public void readFromFile(String tenFlie) {
-//                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-//            }
-//
-//            @Override
-//            public void writeToFile() {
-//                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-//            }
-//            };
-//             scanner = new Scanner(System.in);
-    };
-                }
-       
-
+        dsSach = new DS_Sach() ;}
+  
     private void hienThiMenu() {
         System.out.println("------ MENU ------");
         System.out.println("1. Them San Pham");
@@ -51,6 +35,7 @@ public class menuSP {
     }
         public void run() {
 //        DSDungCuHocTap.writeToFile("SanPham.txt");
+         dsSach = new DS_Sach();
         int luaChon;
         do {
             hienThiMenu();
@@ -120,8 +105,8 @@ public class menuSP {
 //                    int choice = sc.nextInt();
 //                    if(choice == 1){
 //                     System.out.println("Danh sach nhan vien:");
-//                    dsSach.hienThiDanhSach();
-                        dsSach.printFileContents("SanPham.txt");
+                    dsSach.hienThiDanhSach();
+//                        dsSach.printFileContents("SanPham.txt");
                         
 //                    break;
 //                    }

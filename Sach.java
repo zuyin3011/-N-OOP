@@ -18,19 +18,8 @@ public class Sach extends SanPham1{
     String loaiSach;
     private SanPham1 sanPham;
     private static Scanner sc=new Scanner(System.in);
-    public Sach(TacGia tacGia, int namXB, String maSach, String NSX, double giaBan, double giaNhap, String tenSP,String loaiSach) {
-        this(maSach, NSX, giaBan, giaNhap, tenSP, loaiSach, namXB, loaiSach);
-    }
 
-    public Sach(String maSach, String NSX, double giaBan, double giaNhap, String tenSP, String loaiSach, int namXB, String loaiSach1) {
-        super(NSX, giaBan, giaNhap, tenSP);
-        this.maSach = maSach;
-        this.tacGia = tacGia;
-        this.namXB = namXB;
-        this.loaiSach = loaiSach;
-    }
-
-    public Sach(TacGia tacGia, int namXB, String maSach, String NSX, String tenSP, double giaBan, double giaNhap,String loaiSach) {
+    public Sach(TacGia tacGia, int namXB, String maSach, String NSX, String tenSP, long giaBan, long giaNhap,String loaiSach) {
         super(NSX, tenSP, giaBan, giaNhap);
         this.maSach=maSach;
         this.tacGia = tacGia;
@@ -41,6 +30,15 @@ public class Sach extends SanPham1{
 
     public Sach() {
     }
+
+   public Sach(String tenSP, String NSX, long giaBan, long giaNhap, String maSach, TacGia tacGia, int namXB, String loaiSach, String ngonNgu, String loaiTruyen) {
+        
+    }
+
+    Sach(String tenSP, String NSX, long giaBan, long giaNhap, String maSach, TacGia tacGia, int namXB, String loaiSach, int Lop, String mon) {
+      
+    }
+
      
 
 
@@ -58,7 +56,14 @@ public class Sach extends SanPham1{
 //    Sach(SanPham sp, String string, TacGia tacGia, int parseInt) {
 //        this(sp, string, tacGia, parseInt, txt[7]);
 //    }
-
+        public Sach(String tenSP, String NSX, long giaBan, long giaNhap, String maSach, TacGia tacGia, int namXB, String loaiSach) {
+        super(tenSP,NSX,giaBan,giaNhap);
+        this.maSach=maSach;
+        this.tacGia=tacGia;
+        this.namXB=namXB;
+        this.loaiSach=loaiSach;
+    }
+    
     Sach(SanPham1 sp, String string, TacGia tacGia, int parseInt, String par1) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
@@ -99,7 +104,6 @@ public class Sach extends SanPham1{
         this.loaiSach = loaiSach;
     }
 
-  
 
     @Override
         public void input(){

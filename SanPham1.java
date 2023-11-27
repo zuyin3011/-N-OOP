@@ -14,24 +14,20 @@ package SPham;
 //import java.util.Date;*/
 import java.util.Scanner;
 public class SanPham1 {
-    private String NSX;
     private String tenSP;
-    private double giaBan;
-    private double giaNhap;
+    private String NSX;
+    private long giaBan;
+    private long giaNhap;
     Scanner sc= new Scanner (System.in);
 
-    public SanPham1(String NSX, double giaBan, double giaNhap, String tenSP) {
-        this( NSX, tenSP, giaBan, giaNhap);
-    }
-
-    public SanPham1( String NSX, String tenSP, double giaBan, double giaNhap) {
-    
-        this.NSX = NSX;
+    public SanPham1(String tenSP, String NSX, long giaBan, long giaNhap) {
         this.tenSP = tenSP;
+        this.NSX = NSX;
         this.giaBan = giaBan;
         this.giaNhap = giaNhap;
-    
     }
+
+
 
     /**
      *
@@ -39,7 +35,6 @@ public class SanPham1 {
     public SanPham1() {
         
     }
-
 //    SanPham(String NSX, String tenSP, double giaBan, double giaNhap) {
 //          this.NSX = NSX;
 //        this.tenSP = tenSP;
@@ -47,9 +42,6 @@ public class SanPham1 {
 //        this.giaNhap = giaNhap;
 //    }
 
-    SanPham1(String string, String string0, double parseDouble, double parseDouble0, int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
  
     public String getNSX() {
@@ -79,10 +71,10 @@ public class SanPham1 {
         return giaBan;
     }
 
-    public void setGiaBan(double Gia) {
+    public void setGiaBan(long GiaBan) {
         while( giaBan<0 || giaBan>1000000000){
             System.out.println("Nhap lai gia Ban cua San Pham");
-            giaBan=sc.nextDouble();
+            giaBan=sc.nextLong();
         }
         this.giaBan = giaBan;
     }
@@ -90,10 +82,10 @@ public class SanPham1 {
         return giaNhap;
     }
 
-    public void setGiaNhap(double Gia) {
+    public void setGiaNhap(long GiaNhap) {
         while( giaNhap<0 || giaNhap>1000000000){
             System.out.println("Nhap lai gia Nhap cua San Pham");
-            giaNhap=sc.nextDouble();
+            giaNhap=sc.nextLong();
         }
         this.giaNhap = giaNhap;
     }
@@ -101,13 +93,13 @@ public class SanPham1 {
 
     public void input(){
             System.out.println("Nhap NSX: ");
-            this.NSX = this.sc.nextLine();
+            NSX = sc.nextLine();
             System.out.println("Nhap ten San Pham: ");
-            this.tenSP = this.sc.nextLine();
+            tenSP = sc.nextLine();
             System.out.println("Nhap gia Ban: ");
-            this.giaBan = this.sc.nextDouble();
+            giaBan = sc.nextLong();
             System.out.println("Nhap gia Nhap: ");
-            this.giaNhap = this.sc.nextDouble();
+            giaNhap =sc.nextLong();
           
         
     
