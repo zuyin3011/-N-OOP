@@ -1,7 +1,6 @@
-package SPham;
+package DUNGCU;
 
 public interface DOCGHIFILE {
-    void readFromFile(String tenFile);
-    void writeToFile(String tenFlie);
+	void readFromFile(String tenFlie);
+    void writeToFile(String tenFile);
 }
-
